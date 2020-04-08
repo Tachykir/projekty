@@ -1,0 +1,900 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+        int a, b, c;
+        
+        public Form1()
+        {
+            InitializeComponent();
+            
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+            panel3.Visible = false;
+            panel4.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Runda 1 Łatwe
+            panel5.Visible = true;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Runda 1 Trudne
+            panel6.Visible = true;
+            panel5.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //Runda 2 Łatwe
+            panel7.Visible = true;
+            panel6.Visible = false;
+            panel5.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //Runda 2 Trudne
+            panel8.Visible = true;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel5.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            //Runda 3 Trudne
+            panel9.Visible = true;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel5.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //Runda 3 Bardzo Trudna
+            panel10.Visible = true;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel5.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel4.Visible = false;
+            panel2.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel4.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+        }
+
+        private void r1lp1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+
+            if (r1lp1.Checked = true) ;
+            label2.Text = "Elo elo test 123";
+            pictureBox1.Image = imageList1.Images[0];
+            button12.Visible = true;
+            button13.Visible = true;
+            button14.Visible = true;
+            button15.Visible = true;
+            button12.Text = "Odpowiedz A";
+            button13.Text = "Odpowiedz B";
+            button14.Text = "Odpowiedz C";
+            button15.Text = "Odpowiedz D";
+            
+        }
+
+        private void r1lp2_CheckedChanged(object sender, EventArgs e)
+        {
+            
+
+            if (r1lp1.Checked = true) ;
+            label2.Text = "Elo elo test 123";
+            pictureBox1.Image = imageList1.Images[0];
+            button12.Visible = true;
+            button13.Visible = true;
+            button14.Visible = true;
+            button15.Visible = true;
+            button12.Text = "Odpowiedz A";
+            button13.Text = "Odpowiedz B";
+            button14.Text = "Odpowiedz C";
+            button15.Text = "Odpowiedz D";
+           
+        }
+
+        private void r1lp3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp10_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp11_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp13_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp15_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp16_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp17_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp18_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1lp20_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp10_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp11_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp13_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp15_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp16_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp17_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp18_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r1tp20_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Exaltonierzy!";
+            label2.Text = "";
+            pictureBox1.Image = null;
+            button12.Visible = false;
+            button13.Visible = false;
+            button14.Visible = false;
+            button15.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void r2lp1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp10_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp11_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp13_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp15_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp16_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp17_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp18_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2lp20_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = imageList1.Images[0];
+            player.SoundLocation = "start.wav";
+            button10.Visible = true;
+            button1.Visible = true;
+            button2.Visible = true;
+            button3.Visible = true;
+            button16.Visible = false;
+            label1.Visible = true;
+            label2.Visible = true;
+            pictureBox1.Visible = true;
+            button11.Visible = true;
+            player.Play();
+            button18.Visible = true;
+            button19.Visible = true;
+            button20.Visible = true;
+            button21.Visible = true;
+            button22.Visible = true;
+            button23.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            textBox1.Visible = true;
+            textBox2.Visible = true;
+            checkBox1.Visible = true;
+            checkBox2.Visible = true;
+            checkBox3.Visible = true;
+        }
+
+
+        private void r2tp1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp10_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp11_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp13_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp15_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp16_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp17_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp18_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r2tp20_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp10_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp11_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp13_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp15_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp16_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp17_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp18_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3tp20_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp10_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp11_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp13_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp15_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp16_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp17_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp18_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r3btp20_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            player.SoundLocation = "pop.wav";
+            player.Play();
+            a = int.Parse(textBox2.Text);
+            c = 30;
+            b = a + c;
+            textBox2.Text = Convert.ToString(b);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            player.SoundLocation = "pop.wav";
+            player.Play();
+            a = int.Parse(textBox2.Text);
+            c = 60;
+            b = a + c;
+            textBox2.Text = Convert.ToString(b);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            player.SoundLocation = "zla.wav";
+            player.Play();
+            a = int.Parse(textBox2.Text);
+            c = -15;
+            b = a + c;
+            textBox2.Text = Convert.ToString(b);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            player.SoundLocation = "zla.wav";
+            player.Play();
+            a = int.Parse(textBox2.Text);
+            c = -30;
+            b = a + c;
+            textBox2.Text = Convert.ToString(b);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            player.SoundLocation = "zla.wav";
+            player.Play();
+            a = int.Parse(textBox2.Text);
+            c = -60;
+            b = a + c;
+            textBox2.Text = Convert.ToString(b);
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            player.SoundLocation = "test.wav";
+            player.Play();
+            button17.Visible = false;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            player.SoundLocation = "pop.wav";
+            player.Play();
+            a = int.Parse(textBox2.Text);
+            c = 15;
+            b = a + c;
+            textBox2.Text = Convert.ToString(b);
+        }
+    }
+}
